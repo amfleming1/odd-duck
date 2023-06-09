@@ -1,0 +1,19 @@
+
+
+body {
+    color: rgb(24, 29, 23);
+    background-color: rgb(248,244,60);
+    background: linear-gradient(90deg, rgba(248,244,60,1) 0%, rgba(86,148,40,1) 50%, rgba(141,106,72,1) 100%);
+}
+
+h1 {
+    padding:1rem;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 130px;
+    border: 10px solid;
+    border-color:beige;
+    margin: 2rem;
+    font-color: 
+
+}
