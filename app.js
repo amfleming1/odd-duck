@@ -59,17 +59,17 @@ productArray.push(unicorn);
 productArray.push(water);
 productArray.push(wine);
 
-function setProductImages(dogDuck, boots, banana) {
+function setProductImages(Product1, Product2, Product3) {
 
-    dogDuckImg.Src = dogDuck.ImgSrc;
-    dogDuckImg.alt = dogDuck.name;
-    dogDuckImg.title = dogDuck.name;
-    bootsImg.Src = boots.imgSrc
-    bootsImg.alt = boots.name;
-    bootsImg.title = boots.name;
-    bananaImg.Src = banana.ImgSrc; 
-    bananaImg.alt = banana.name;
-    bananaImg.title = banana.name;
+    Product1Img.Src = Product1.ImgSrc;
+    Product1Img.alt = Product1.name;
+    Product1Img.title = Product1.name;
+   Product2Img.Src = Product2.imgSrc
+    Product2Img.alt = Product2.name;
+   Product2Img.title = Product2.name;
+    Product3Img.Src = Product3.ImgSrc; 
+    Product3Img.alt = Product3.name;
+    Product3Img.title = Product3.name;
 }
     setProductImages(productArray[0], productArray[1], productArray[3]);
 
