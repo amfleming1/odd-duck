@@ -3,9 +3,9 @@
 let votingArea = document.getElementById("voting-area");
 let resultsArea = doucment.getElementbyId("results-area");
 
-let dogDuckImg = document.getElementbyId("Product1");
-let bootsImg = document.getElelmentbyId("Product2");
-let bananaImg = document.getElementbyId("Product3");
+let Product1Img = document.getElementbyId("Product1");
+let Product2Img = document.getElelmentbyId("Product2");
+let Product3Img = document.getElementbyId("Product3");
 
 //products constructor
 function Products(name, Src) {
@@ -18,14 +18,46 @@ function Products(name, Src) {
 let dog = new Products("dogDuck", "./img/dog-duck.jpg");
 let boots = new Products("boots", "./img/boots.jpg");
 let banana = new Products("banana", "./img/banana.jpg");
+let bag = new Products("bag", "./img/bag.jpg");
+let bathroom = new Products("bathroom", "./img/bathroom.jpg");
+let breakfast = new Products("breakfast", "./img/breakfast.jpg");
+let bubblegum = new Products("bubblegum", "./img/bubblegum.jpg");
+let chair = new Products("chair", "./img/chair.jpg");
+let cthulhu = new Products("cthulhu", "./img/cthulhu.jpg");
+let dragon = new Products("dragon", "./img/dragon.jpg");
+let pen = new Products("pen", "./img/pen.jpg");
+let pet = new Products("pet", "./img/pet.jpg");
+let scissors = new Products("scissors", "./img/scissors.jpg");
+let shark = new Products("shark", "./img/shark.jpg");
+let sweep = new Products("sweep", "./img/sweep.jpg");
+let tauntaun = new Products("tauntaun", "./img/tauntaun.jpg");
+let unicorn = new Products("unicorn", "./img/unicorn.jpg");
+let water = new Products("water", "./img/water.jpg");
+let wine = new Products("wine", "./img/wine.jpg");
 
 //letProductList =[dogDuck, boots, banana]
 
 let productArray = [];
 
-productArray.push(dogDuck);
+productArray.push(dog);
 productArray.push(boots);
 productArray.push(banana);
+productArray.push(bag);
+productArray.push(bathroom);
+productArray.push(breakfast);
+productArray.push(bubblegum);
+productArray.push(chair);
+productArray.push(cthulhu);
+productArray.push(dragon);
+productArray.push(pen);
+productArray.push(pet);
+productArray.push(scissors);
+productArray.push(shark);
+productArray.push(sweep);
+productArray.push(tauntaun);
+productArray.push(unicorn);
+productArray.push(water);
+productArray.push(wine);
 
 function setProductImages(dogDuck, boots, banana) {
 
