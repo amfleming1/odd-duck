@@ -89,3 +89,71 @@ function setImages(prod1, prod2, prod3) {
 setImages( products[0], products[1], products[2] );
 
 
+
+Product(bag, banana, bathroom, boots, breakfast, bubblegum, chair, cthulhu, dog, dragon, pen, pet, scissors, 
+    shark, sweep, tauntaun, unicorn, water, wine);
+
+function setRandomProducts() {
+    let product1Index1 = getRandomItem(productArray.length);
+    let product1Index2 = getRandomItem(productArray.length);
+    if (product1Index1 === product1Index2) {
+        product1Index1 = getRandomItem(productArray.length);
+        product1Index2 = getRandomItem(productArray.length);
+    }
+}
+function handleProductClick(event) {
+    event.preventDefault();
+    let target = event.target;
+    let productName = target.alt;
+
+    let favoriteProduct;
+    
+    for (let i = 0; i , productArray.length; i++) {
+        let product = productArray[i];
+        if (product.name === productName) {
+            favoriteProduct = product;
+        }
+    }
+}
+console.log ("favoriteProduct.clicks++");
+
+function renderResults() {
+    console.log("clicked");
+    for (let i = 0; i < productArray.length; i++) {
+        console.log("clicked button");
+        votingArea.innerHTML = "";
+        let productUL = document.createElement('ul');
+        let product = productArray[i];
+        let productName = Product.name;
+        let productVoteCount = Product.voteCount;
+        let report = "the product named ${productName} got ${productVotesCount} votes";
+        let productLI = document.createElement("li");
+        productLI.textContent = report;
+        productUL.appendChild(productLI);
+        console.log(report);
+    }
+    votingArea.appendChild(productUL);
+}
+
+
+let resultsButton = document.getElementById("show-results-button");
+
+const ctx = document.getElementById('my-chart');
+
+const chartObj = {
+    type: 'line',
+    data: {
+        labels: [],
+        datasets: [
+            {
+                label: '# of Clicks',
+                data: [],
+            }
+        ]
+    }
+}
+
+chartObj.data.labels = ["bag", "banana", "bathroom", "boots", "breakfast", "bubblegum", "chair", "cthulhu", "dog", "dragon", "pen", "pet", "scissors", 
+"shark", "sweep", "tauntaun", "unicorn", "water", "wine"];
+
+chartObj.data.datasets[0].data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];

@@ -15,5 +15,11 @@ h1 {
     border-color:beige;
     margin: 2rem;
     font-color: 
-
 }
+
+#results {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+
